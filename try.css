@@ -1,0 +1,143 @@
+body {
+    background-image: url('back.jpg'); /* Add your background image URL */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     height:100vh;
+    width:100vw;
+  }
+  header h1 {
+    text-align: center;/*  Center align the header text */
+    color: white;
+      font-size: 10rem;
+      text-shadow: -1% 1% 0 #000000,
+          1% 1% 0 #000000,
+          1% -1% 0 #000000,
+          -1% -1% 0 #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    mix-blend-mode: overlay;
+  }
+  /* The sidebar menu */
+  .sidebar {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0;
+      left: 0;
+      padding-top: 35px;
+      background-color: #111; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    }
+    
+    /* The sidebar links */
+    .sidebar a {
+      padding: 0% 0% 8% 15%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #818181;
+      display: flex;
+      
+  
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 2%;
+      font-size: 2.5rem;
+      margin-left: 70%;
+      border-bottom:1% black ;
+    }
+    
+    /* The button used to open the sidebar */
+    .openbtn {
+      font-size: 1.5rem;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      border: none;
+      border-radius: 8%;
+    }
+    
+    .openbtn:hover {
+      background-color: #444;
+    }
+    /* Add login button styles */
+  .login-container {
+    position: absolute;
+    /* padding-top: 1%;
+    padding-right: 1%; */
+    right: 0.5%;
+  }
+  
+  
+  .login-button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 8%;
+  }
+  .login-button:hover {
+    background-color: #444;
+  }
+    
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left .5s; /* If you want a transition effect */
+      /* padding-top: 1%;
+      padding-left: 1%; */
+    }
+    
+    /* On smaller screens, where height is less than 450%, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450%) {
+      .sidebar {padding-top: 15%;}
+      .sidebar a {font-size: 18%;}
+    }
+    .sidebar h1{
+      color: #fbfdce;
+      font-size: 3rem;
+      font-weight: bold;
+      padding: 10%;
+      text-align: center;
+      letter-spacing: 3%;
+      margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+  }
+  
+  .logo {
+    float: right;
+    margin-top: 2%;
+    margin-right: 5%;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 10%;
+  }
+  
+  .logo:hover{
+    transform:rotate(90deg)
+  }
+  /* Dropdown items */
+  .dropdown-content a {
+    display: block;
+    padding: 10%;
+    text-decoration: none;
+    color: #333;
+  }
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #9cd8e2;
+  }

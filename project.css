@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.Navigation {
+    height: 100vh;
+    width: 250px;
+    left: -250px;
+    position: fixed;
+    background: #6ac4f8;
+    z-index: 1;
+    transition: 0.5s ease;
+    transition-property: left;
+    overflow-y: auto;
+}
+header h1{
+    color: #fbfdce;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+    padding-left: 25px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.menu{
+   width: 100%;
+   list-style: none; 
+}
+.menu .item{
+    display: block;
+    width: 100%;
+ 
+}
+.menu .item a{
+    color: #fbfdce;
+    padding: 25px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+
+}
+.menu .item a i{
+    width: 70px;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 20 px;
+
+}
+/* menu .item:hover a{
+    background: #030303;
+    color: #0066ff;
+    letter-spacing: 5px;
+}. */
+.menu-btn{
+    position: absolute;
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 20px;
+    /* left: -250px; */
+}
+.Navigation.active{
+    left: 0px;
+}
+.close-btn{
+    position: relative;
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+    margin: auto;
+    padding-left: 230px;
+
+    background-color: #0080ca;
+ 
+}
+.dropdown{
+    position: absolute;
+    right: 0;
+    transition: 0.3s ease;
+}
+.sub-menu{
+    background: #262627;
+    /* display: none; */
+    
+
+}
+.Navigation.active{
+    left: 0;
+}
