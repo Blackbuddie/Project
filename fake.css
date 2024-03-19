@@ -108,7 +108,6 @@ body {
   color: white;
   border: none;
   border-radius: 8%;
-  position: absolute;
 }
 
 .login-button:hover {
@@ -122,8 +121,7 @@ body {
   display: flex;
   width: 100vw;
   justify-content: space-between;
-  padding: 10px;
-  padding-right:2%;
+  /* padding: 10px; */
 }
 
 
@@ -194,6 +192,7 @@ body {
   position: relative;
 }
 
+
 .close-button {
   position: absolute;
   top: 0;
@@ -221,10 +220,30 @@ body {
   transition-duration: 0.4s;
 }
 
+.studentdata3 {
+  background-color: #04AA6D;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 20%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
 .studentdata1:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .studentdata2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.studentdata3:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -246,7 +265,18 @@ body {
   height: 50%;
   background-color: #000000;
   overflow: hidden;
-  left: 60%;
+  left: 30%;
+  transition: 2s linear;
+}
+
+#test3 {
+  display:none;
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  background-color: #000000;
+  overflow: hidden;
+  left: 70%;
   transition: 2s linear;
 }
 .table {

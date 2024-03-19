@@ -15,12 +15,11 @@
 
 <body>
   <div id="mySidebar" class="sidebar">
-  
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <h1>HOSTEL</h1>
 
     <div class="dropdown">
-      <a href="#">About<i class="fas fa-angle-right  logo"></i></a>
+      <a href="#">About<i class="fas fa-angle-right logo"></i></a>
       <div class="dropdown-content">
         <a href="#">Mission</a>
         <a href="#">Vision</a>
@@ -29,7 +28,7 @@
     </div>
 
     <div class="dropdown">
-      <a href="#">Complaint<i class="fas fa-angle-right  logo"></i></a>
+      <a href="#">Complaint<i class="fas fa-angle-right logo"></i></a>
       <div class="dropdown-content">
         <a href="#">Report Issue</a>
         <a href="#">View Status</a>
@@ -38,7 +37,7 @@
     </div>
 
     <div class="dropdown">
-      <a href="#">Schedule<i class="fas fa-angle-right  logo"></i></a>
+      <a href="#">Schedule<i class="fas fa-angle-right logo"></i></a>
       <div class="dropdown-content">
         <a href="#">Daily Schedule</a>
         <a href="#">Exam Schedule</a>
@@ -47,7 +46,7 @@
     </div>
 
     <div class="dropdown">
-      <a href="#">Contact<i class="fas fa-angle-right  logo"></i></a>
+      <a href="#">Contact<i class="fas fa-angle-right logo"></i></a>
       <div class="dropdown-content">
         <a href="#">Email Us</a>
         <a href="#">Call Us</a>
@@ -55,35 +54,37 @@
       </div>
     </div>
   </div>
+
   <div id="main">
-    <button class="openbtn"onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+    <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
     <div class="login-container">
       <button class="login-button"><i class="fa-solid fa-user"></i></button>
     </div>
   </div>
+
   <div>
     <h1 id="header">
       hostel management
     </h1>
   </div>
-  <div class="studentdata1"click me  onclick="mytestfunc()">
-    <h3>click me</h3>
-    <div class="closedetail" onclick="">
 
-    </div>
-
+  <div class="studentdata1" onclick="mytestfunc()">
+    <h3><span>click me</span></h3>
   </div>
 
   <div class="studentdata2" onclick="mytestfunc1()">
-    <h3>click me</h3>
-
+    <h3><span>click me</span></h3>
   </div>
-  <div id="test1"  class="test-container1">
-    <button class="close-button"close  onclick="closeTest1()">Close</button>
+
+  <div class="studentdata3" onclick="mytestfunc2()">
+    <h3><span>click me</span></h3>
+  </div>
+
+  <div id="test1" class="test-container1">
+    <button class="close-button" onclick="closeTest1()">Close</button>
     <div class="table">
       <table>
-        <h1 style="color: wheat;
-          text-align: center;">Student Details</h1>
+        <h1 style="color: wheat; text-align: center;">Total Student</h1>
         <tr>
           <th>Firstname</th>
           <th>Lastname</th>
@@ -112,15 +113,11 @@
     </div>
   </div>
 
-  <div id="test2"  class="test-container2">
-    <button class="close-button"close  onclick="closeTest2()">Close</button>
-
-    <h1 style="color: wheat;
-    text-align: center;">My test div</h1>
+  <div id="test2" class="test-container2">
+    <button class="close-button" onclick="closeTest2()">Close</button>
+    <h1 style="color: wheat; text-align: center;">Present Student</h1>
     <div class="table">
       <table>
-        <h1 style="color: wheat;
-          text-align: center;">Student Data</h1>
         <tr>
           <th>Firstname</th>
           <th>Lastname</th>
@@ -144,6 +141,39 @@
       </table>
     </div>
   </div>
+
+  <div id="test3" class="test-container3">
+    <button class="close-button" onclick="closeTest3()">Close</button>
+    <h1 style="color: wheat; text-align: center;">Total Employees</h1>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Phone No</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>5045678912</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>9412345678</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>8032456987</td>
+
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
   <script>
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
@@ -167,17 +197,28 @@
     function mytestfunc() {
       document.getElementById("test1").style.display = "block";
       // console.log("Test func")
+
     };
     function mytestfunc1() {
       document.getElementById("test2").style.display = "block";
-      console.log("Test func")
+      // console.log("Test func")
+
+    };
+    function mytestfunc2() {
+      document.getElementById("test3").style.display = "block";
+      // console.log("Test func")
+
     };
     function closeTest1() {
     document.getElementById("test1").style.display = "none";
-  };
-  function closeTest2() {
+     };
+    function closeTest2() {
     document.getElementById("test2").style.display = "none";
-  };
+     };
+     function closeTest3() {
+    document.getElementById("test3").style.display = "none";
+     };
+
   </script>
 </body>
 
