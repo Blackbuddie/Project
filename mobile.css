@@ -6,29 +6,43 @@
     }
 
   .login-button {
-      font-size: 2rem;
+      font-size: 1.5rem;
       cursor: pointer;
       background-color: black;
       color: white;
       border: none;
       border-radius: 8%;
+      padding: 0 10%;
     }
     #header {
         font-size: 3rem;
         top: 1rem;
     }
     .openbtn{
-        font-size: 2rem;
-        cursor: pointer;
-        background-color: black;
-        color: white;
-        border: none;
-        border-radius: 8%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 8%;
+            padding: 0 1%;
     }
     #main{
         padding-right: 5px;
         position: absolute;
     }
+    .studentdata1-count{
+        background-color: #000000;
+        width: 20%;
+        height: 20%;
+        color: #ffffff;
+        margin-left: 10%;
+        border-width: 3px;
+        border-style: solid; 
+        border-image: linear-gradient(45deg, #0400ff, #ff0303);
+        /* display: inline-block; */
+        border-image-slice:1;
+      }
 
 
 

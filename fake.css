@@ -28,6 +28,11 @@ body {
   mix-blend-mode: overlay;
   margin-top: 5%;
 }
+#content-container {
+  height: 100vh; /* Set height to fill the viewport */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
 
 /* The sidebar menu */
 .sidebar {
@@ -41,7 +46,6 @@ body {
   /* Stay on top */
   top: 0;
   left: 0;
-  padding-top: 35px;
   background-color: #111;
   /* Black*/
   overflow-x: hidden;
@@ -56,7 +60,7 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   text-align: center;
-  color: #818181;
+  color: #e7e7e7;
   display: flex;
 
 
@@ -64,7 +68,7 @@ body {
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #dbdbdb;
+  color: #ffffff;
 }
 
 /* Position and style the close button (top right corner) */
@@ -88,7 +92,7 @@ body {
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: #aaaaaa;
 }
 
 /* Add login button styles */
@@ -121,7 +125,7 @@ body {
   display: flex;
   width: 100vw;
   justify-content: space-between;
-  /* padding: 10px; */
+  /* padding: 10%; */
 }
 
 
@@ -158,7 +162,7 @@ body {
   display: block;
   padding: 10%;
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
 }
 
 .dropdown.active .dropdown-content {
@@ -166,25 +170,56 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #9cd8e2;
+  background-color: #8a8a8a;
+  color: hwb(0 84% 0%);
 }
 
 .studentdata1 {
   background-color: #04AA6D;
   /* Green */
-  border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10% 15%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  margin-top: 40%;
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
   /* Safari */
   transition-duration: 0.4s;
 }
+.studentdata1-count{
+  background-color: #000000;
+  width: 10%;
+  height: 20%;
+  color: #ffffff;
+  margin-left: 10%;
+  border-width: 3px;
+  border-style: solid; 
+  border-image: linear-gradient(45deg, #0400ff, #ff0303);
+  display: inline-block;
+  border-image-slice:1;
+}
+
+
+/* Define the animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the element */
+.slide-in {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+
 .test-container {
   position: relative;
 }
@@ -197,7 +232,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 10px;
+  margin: 10%;
   margin: 0.5rem;
 }
 
@@ -207,12 +242,11 @@ body {
   /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1% 2%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 16%;
   margin-left: 30%;
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
@@ -225,12 +259,11 @@ body {
   /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1% 2%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 50%;
   margin-left: 20%;
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
@@ -238,13 +271,13 @@ body {
   transition-duration: 0.4s;
 }
 .studentdata1:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12% 16% 0 rgba(0, 0, 0, 0.24), 0 17% 50% 0 rgba(0, 0, 0, 0.19);
 }
 .studentdata2:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12% 16% 0 rgba(0, 0, 0, 0.24), 0 17% 50% 0 rgba(0, 0, 0, 0.19);
 }
 .studentdata3:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12% 16% 0 rgba(0, 0, 0, 0.24), 0 17% 50% 0 rgba(0, 0, 0, 0.19);
 }
 
 #test1 {
@@ -254,8 +287,8 @@ body {
   height: 50%;
   background-color: #000000;
   overflow: hidden;
-  left: 10%;
   transition: 2s linear;
+  border-radius: 3%;
 }
 
 #test2 {
@@ -265,8 +298,9 @@ body {
   height: 50%;
   background-color: #000000;
   overflow: hidden;
-  left: 30%;
+  left: 36%;
   transition: 2s linear;
+  border-radius: 3%;
 }
 
 #test3 {
@@ -278,6 +312,7 @@ body {
   overflow: hidden;
   left: 70%;
   transition: 2s linear;
+  border-radius: 3%;
 }
 .table {
   /* width: 70%; */
@@ -286,7 +321,7 @@ body {
   flex-direction: column;
   /* align-items: center; */
   /* align-items: center; */
-  /* padding: 15px 32px; */
+  /* padding: 15% 32%; */
   margin-top:5%;
 
 }
